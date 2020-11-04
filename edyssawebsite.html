@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #8CEBFE;
+  padding: 15px;
+  text-align: left;
+  font-size: 30px;
+  color: white;
+  width: auto;
+  height:200px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: right;
+  text-align: center;
+  width: 33.333333333333%;
+  height: 50px; /* only for demonstration, should be removed */
+  background: #8CEBFE;
+  font-size: 20px;
+  color: gray;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float:left;
+  padding: 20px;
+  width: 33.333333333333%;
+  background-color: #8CEBFE;
+  height:200px
+}
+
+
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #8CEBFE;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, header {
+    width: 50%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>33 Buckets: Chlorine Tracker</h1>
+
+</header>
+
+<section>
+    <nav>
+      <h1>Occopata</h1>
+    </nav>
+    <nav>
+      <h1>Mayrasco</h1>
+    </nav>
+    <nav>
+      <h1>    </h1>
+    <nav>
+</section>
+<section>
+  <article>
+    <h2>The problem</h2>
+    <p>Communities around the world still drink contaminated water.  Unclean water causes for diseases and slows the process of growth.
+  </article>
+
+  <article>
+    <h2>The Solution</h2>
+    <p>33 Buckets partners with communitiies to build water resovoirs and filters the water with Chlorine.  This website will give you live updates to each resoviour being cleaned.</p>
+  </article>
+
+  <article>
+    <h2>Make a difference</h2>
+    <p>Vist our main 33 Buckets website for more information on our progress and how you can help change the loves of others.</p>
+  </article>
+</section>
+
+
+
+</body>
+</html>
